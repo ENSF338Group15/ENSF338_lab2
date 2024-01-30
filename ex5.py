@@ -78,6 +78,6 @@ logarithmic function represented by the equation y = a * log(x) + b where a dete
 and b is the vertical shift. As the time complexity of the algorithm is indicated to be linear, and resebles
 a straight line, as seen in our output, then the relationship is correctly determined to be linear. Binary
 search commonly exhibits a logarithmic time complexity, the logarithmic fit indicates a decreasing rate
-of time as input size decreases, therefore the correct relationship is determined to be logarithmic. Our results
+of time as input size increases, therefore the correct relationship is determined to be logarithmic. Our results
 allign exactly as expected.
 '''
