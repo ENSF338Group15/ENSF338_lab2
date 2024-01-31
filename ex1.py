@@ -1,12 +1,11 @@
+# 1. The code calculates the Fibonacci number in the nth position
+# 2. This is a divide-and-conquer algorithm as it splits the problem by
+# #  recursively calling func until n is 0 or 1 and merges each subproblem
+# 3. Time Complexity: O(2^n)
+# 5. Time Complexity when optimized: O(n)
+
 import timeit
 import matplotlib.pyplot as plt
-
-
-# 1. The code calculates the fibononocci number in the nth position
-# 2. This is a divide-and-conquer alogorithm as it splits the problem by
-#    recursively calling func until n is 0 or 1 and merges each subproblem
-# 3. Time Complexity: O(2^n)
-# 5. Time complexity when optimized: O(n)
 
 
 def func(n):
@@ -16,7 +15,7 @@ def func(n):
         return func(n - 1) + func(n - 2)
 
 
-# 4
+# 4.
 def func_memo(n, memo={}):
     if n in memo:
         return memo[n]
@@ -26,9 +25,10 @@ def func_memo(n, memo={}):
         memo[n] = func_memo(n - 1, memo) + func_memo(n - 2, memo)
         return memo[n]
 
-
 # n = int(input())
 # print(func_memo(n))
+
+# 6.
 exec_time = []
 for n in range(36):
     original_time = timeit.timeit(f'func({n})', number=1, globals=globals())
